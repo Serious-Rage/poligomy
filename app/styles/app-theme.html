@@ -26,14 +26,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   /* Application theme */
 
   :root {
+    /*
     --primary-text-color: var(--paper-grey-900);
-    --primary-background-color: #ffffff;
-    --secondary-text-color: #737373;
-    --disabled-text-color: #9b9b9b;
-    --divider-color: #dbdbdb;
+     --secondary-text-color: #737373;
+    */
+     --primary-text-color: #8a0000;
+    --primary-background-color: #000;
+    --secondary-text-color: #737373ab;
+    --disabled-text-color:9b9b9b00;
+    --divider-color: #000;
+    /*
     --primary-color: var(--paper-indigo-500);
+    */
+     --primary-color: #000;
+       /*
     --light-primary-color: var(--paper-indigo-100);
     --dark-primary-color: var(--paper-indigo-700);
+      /*
+    --light-primary-color: #919191;
+    --dark-primary-color: #454545;
     --accent-color: var(--paper-pink-a200);
     --light-accent-color: var(--paper-pink-a100);
     --dark-accent-color: var(--paper-pink-a400);
@@ -41,13 +52,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     /* Components */
 
     /* paper-drawer-panel */
-    --drawer-menu-color: #ffffff;
-    --drawer-border-color: 1px solid #ccc;
-    --drawer-toolbar-border-color: 1px solid rgba(0, 0, 0, 0.22);
+    --drawer-menu-color: #000;
+    --drawer-border-color: 0px solid grey;
+    --drawer-toolbar-border-color: 4px solid rgba(000, 000, 000, 0.92);
 
     /* paper-menu */
-    --paper-menu-background-color: #fff;
-    --menu-link-color: #111111;
+    --paper-menu-background-color: #8a0000;
+    --menu-link-color: #000;
   }
 
   /* General styles */
@@ -65,29 +76,38 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     color: var(--secondary-text-color);
     background-color: var(--drawer-menu-color);
     border-bottom: var(--drawer-toolbar-border-color);
+
   }
 
   #drawerToolbar .menu-name {
+  	margin-left:30%;
+  	color: blue;
     @apply(--paper-font-title);
   }
 
   paper-scroll-header-panel {
     height: 100%;
+      border: 14px ridge grey;
+ 
   }
 
   paper-menu {
+  	background:black;
     --paper-menu-selected-item: {
-      color: var(--primary-color);
+    /*  color: var(--primary-color); */
+    color: #000;
+    border: 14px ridge grey;
     }
 
     --paper-menu-focused-item-after: {
-      background: var(--primary-color);
+   /*    background: var(--primary-color); */
+   background: #000;
     }
   }
 
   paper-menu iron-icon {
     margin-right: 33px;
-    opacity: 0.54;
+    opacity: 0.94;
   }
 
   paper-menu a {
@@ -99,16 +119,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     font-family: 'Roboto', 'Noto', sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 24px;
     min-height: 48px;
     padding: 0 16px;
   }
 
   #mainToolbar.tall .app-name {
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 48px;
+    font-weight: 400;
     /* Required for main area's paper-scroll-header-panel custom condensing transformation */
     -webkit-transform-origin: left center;
     transform-origin: left center;
@@ -126,24 +146,49 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
   #mainToolbar:not(.tall) .middle-container {
-    font-size: 18px;
+    font-size: 22px;
     padding-bottom: 0;
+ 
   }
+   #mainToolbar:not(.tall) {
+
+   }
 
   #mainToolbar .bottom-container {
     @apply(--paper-font-subhead);
-
+ background-color:black;
     margin-left: 48px;
     /* Required for main area's paper-scroll-header-panel custom condensing transformation */
     -webkit-transform-origin: left center;
     transform-origin: left center;
   }
-
-  /* Height of the scroll area */
-  .content {
-    height: 900px;
+  
+  #mainToolbar {
+  	border-bottom:14px ridge grey;
+  	background-image:url(../images/horizontal/embersHot2.png);
+  	background-size: 100% 100%;
+  	background-repeat:no-repeat;
   }
+  
+  
+   /* ------------------------------------------------------------------------------------ /*
+   /* ------------------------------------------------------------------------------------ /*
 
+    /* Height of the scroll area */
+    /* THIS IS FOR OUTSIDE CARDS BUT NOT IN SIDEBAR */
+ 
+
+  .content {
+                           height: '100%';  
+                           min-height:520px;
+                  
+                          background-image:  url(../images/fuzz.gif);
+                          background-repeat: repeat;
+  }
+   /* ------------------------------------------------------------------------------------ /*
+   /* ------------------------------------------------------------------------------------ /*
+ 
+ 
   section[data-route="home"] paper-material {
     @apply(--paper-font-body2);
   }
@@ -151,15 +196,26 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   section[data-route="home"] paper-material .subhead {
     @apply(--paper-font-subhead);
   }
-
+/* BELOW IS CSS FOR CARDS */
   paper-material {
-    border-radius: 2px;
+    border-radius:2px;
+    border: 14px ridge grey;
     height: 100%;
     padding: 16px 0 16px 0;
     width: calc(98.66% - 16px);
     margin: 16px auto;
-    background: white;
+    background: #000;
   }
+  
+  
+  
+div  #mainContainer .style-scope .paper-scroll-header-panel{
+		background-color: #000;
+
+	}
+  
+  
+  
 
   #toast .toast-hide-button {
     color: #eeff41;
@@ -175,11 +231,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     #drawer .paper-toolbar {
       margin-left: 16px;
-    }
+      }
 
     #mainToolbar.tall .app-name {
-      font-size: 24px;
-      font-weight: 400;
+      font-size: 48px;
+      font-weight: 900;
+        background-color:#000;
+
     }
 
     paper-material {
@@ -187,6 +245,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       width: calc(97.33% - 32px);
       padding-left: 16px;
       padding-right: 16px;
+         
     }
 
   }
@@ -195,7 +254,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   @media (min-width: 601px) {
 
     #drawer.paper-drawer-panel > [drawer] {
-      border-right: 1px solid rgba(0, 0, 0, 0.14);
+      border-right: 2px solid rgba(0, 0, 0, 0.14);
     }
 
     iron-pages {

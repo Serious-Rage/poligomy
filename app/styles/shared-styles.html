@@ -16,17 +16,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <style>
       .page-title {
         @apply(--paper-font-display2);
+        color: red;
       }
 
       .app-menu {
+      	color: blue;
         --paper-menu-selected-item: {
           color: #fff;
-          background: var(--light-primary-color);
+          background: #000;
         }
       }
 
       paper-menu a > *, paper-menu paper-item > *, paper-menu paper-icon-item > * {
         pointer-events: none;
+    
       }
 
       @media (max-width: 600px) {
