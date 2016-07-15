@@ -7,11 +7,29 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
-
+root {
+	
+	}
 body {
-  background: #fafafa;
+  background: #575757;
+  background-image: url(../images/fuzz.gif);
+  background-repeat:repeat;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
+  color: red;
+  z-index: 1;
+  
+}
+#paperDrawerPanel  {
+		background-color: red;
+		 background-image: url(../images/fuzz.gif);
+
+		  z-index:2 
+      	}
+
+#paperDrawerPanel  .app-menu {
+	background-color: #000;
+	border-bottom: 14px ridge grey;
+	border-top: 14px ridge grey;
 }
 
 /*
@@ -23,3 +41,46 @@ body {
 .focus-target {
   outline: none;
 }
+
+/*   MENU SELECT CSS  */
+#mainContainer .app-menu {
+	background: red;
+	color:blue;
+	font-weight: 1000px;
+	font-style: bold;
+}
+
+/*    GENERAL BODY CSS*/
+ #mainContainer  {
+	background-color:black;
+/* 	background-image: url(../images/vertical/evil.png); */
+		background-image: url(../images/vertical/aAwsomHead1.png);
+
+	
+	background-size: 100% 150%;
+	background-repeat: no-repeat;
+	background-position: 0px -200px;
+
+}
+.page-title {
+  outline: none;
+   color: red;
+  background-color: #000;
+}
+div.app-name{
+  
+  color: blue;
+}
+
+ /* REGULAR NON HEADER TEXT IN CARDS */
+#headerPanelMain {
+	color:white;
+}
+#headerPanelMain  h1,  #headerPanelMain  h2,  #headerPanelMain  h3,  #headerPanelMain  h4 {
+	color:red;
+}
+
+#headerPanelMain  ul,  #headerPanelMain  li {
+		color:blue;
+}
+
