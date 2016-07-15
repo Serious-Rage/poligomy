@@ -1,5 +1,6 @@
 {
-  "name": "polymer-starter-kit",
+  "name": "poligomy",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "iron-elements": "PolymerElements/iron-elements#^1.0.10",
@@ -7,7 +8,19 @@
     "page": "visionmedia/page.js#~1.6.4",
     "paper-elements": "PolymerElements/paper-elements#^1.0.7",
     "platinum-elements": "PolymerElements/platinum-elements#^1.2.0",
-    "polymer": "Polymer/polymer#^1.4.0"
+    "polymer": "Polymer/polymer#^1.4.0",
+    "google-sheets": "GoogleWebComponents/google-sheets#^1.0.5",
+    "google-youtube": "GoogleWebComponents/google-youtube#^1.2.1",
+    "google-youtube-upload": "GoogleWebComponents/google-youtube-upload#^2.0.0",
+    "google-url-shortener": "GoogleWebComponents/google-url-shortener#^1.0.1",
+    "google-signin": "GoogleWebComponents/google-signin#^1.3.6",
+    "google-castable-video": "GoogleWebComponents/google-castable-video#^1.0.2",
+    "google-calendar": "GoogleWebComponents/google-calendar#^1.0.2",
+    "google-apis": "GoogleWebComponents/google-apis#^1.1.6",
+    "google-analytics": "GoogleWebComponents/google-analytics#^1.2.2",
+    "google-map": "GoogleWebComponents/google-map#^1.1.10",
+    "google-streetview-pano": "GoogleWebComponents/google-streetview-pano#^1.0.3",
+    "google-feeds": "GoogleWebComponents/google-feeds#^1.0.2"
   },
   "devDependencies": {
     "web-component-tester": "^4.0.0"

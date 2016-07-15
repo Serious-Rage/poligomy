@@ -53,13 +53,16 @@ body {
 /*    GENERAL BODY CSS*/
  #mainContainer  {
 	background-color:black;
-/* 	background-image: url(../images/vertical/evil.png); */
-		background-image: url(../images/vertical/aAwsomHead1.png);
+	background-image: url(../images/vertical/evil.png); 
+	/*
+		background-image: url(../images/vertical/aAwsomHead1.png); 
+		background-image: url(../images/glam2.png); 
+		background-image: url(../images/vertical/embers.png); */
 
 	
-	background-size: 100% 150%;
-	background-repeat: no-repeat;
-	background-position: 0px -200px;
+background-size: 100% 150%; 
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
 
 }
 .page-title {
@@ -70,17 +73,72 @@ body {
 div.app-name{
   
   color: blue;
-}
+  }
 
  /* REGULAR NON HEADER TEXT IN CARDS */
 #headerPanelMain {
 	color:white;
 }
-#headerPanelMain  h1,  #headerPanelMain  h2,  #headerPanelMain  h3,  #headerPanelMain  h4 {
-	color:red;
+h1 {
+	font-size: 56px;
+}
+ #headerPanelMain  h1,  #headerPanelMain  h2,  #headerPanelMain  h3,  #headerPanelMain  h4 {
+	color:red;	
 }
 
 #headerPanelMain  ul,  #headerPanelMain  li {
 		color:blue;
+	
+		}
+		
+		
+.indent0 {
+	position: relative;
+	bottom:220px;
+	color: blue;
+	font-size:130%;
+	margin-left:50%
+}
+.indent1 {
+	position: relative;
+	bottom:200px;
+	color: blue;
+	font-size:130%;
+	margin-left:42%;
+}
+.indent2 {
+	position: relative;
+	bottom:175px;
+	color: blue;
+	font-size:130%;
+	margin-left:55%; 
+}
+ #mddl{
+	position: relative;
+	left: 18%;
+	
+    top: -230px;
+	
+	font-size:300%;
+	
+	margin-left:15%; 
+}
+p span#txtBlu1, #txtBlu1,p  .txtBlu1, p  span#txtBlu2,  .txtBlu2,  #txtBlu3,p  span.txtBlu3{
+	color:red;
+}
+ h2#forcBlu, h2.forcBlu,  h2#forcBlu.forcBlu {
+	color: blue;
 }
 
+h2 span#txtRed1, .txtRed1 {
+	color:red;
+}
+#cardfoot1{
+	position:absolute;
+	bottom:-3px;
+	left:0;
+	
+}
+#myHeight{
+	height: 520px;
+}
